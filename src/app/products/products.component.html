@@ -1,0 +1,115 @@
+<div class="flex min-h-screen bg-gray-50 w-full">
+
+    <main class="flex-1 w-full">
+
+        <div class="flex items-center justify-evenly mb-8 w-[25%]">
+            <button class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border">
+                <span class="w-4 h-4 bg-blue-400 rounded-full"></span>
+                <span>This month</span>
+            </button>
+            <button class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border">
+                <span class="w-4 h-4 bg-slate-400 rounded-full"></span>
+                <span>Till now</span>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 mb-8 w-full">
+            <!-- Card 1 -->
+            <div class="p-6 bg-white rounded-xl">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold">Total Products</h3>
+                    <select class="px-2 py-1 border rounded">
+                        <option>Warehouse</option>
+                        <option>Inventory</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <div class="text-3xl font-bold">$15,700.00</div>
+                    <div class="flex items-center gap-2 text-green-500">
+                        <span>↑ 12.1%</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                    <div>50k New Units</div>
+                    <div>15 categories</div>
+                </div>
+            </div>
+            <div class="p-6 bg-white rounded-xl">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold">Products Sold</h3>
+                    <select class="px-2 py-1 border rounded">
+                        <option>Warehouse</option>
+                        <option>Inventory</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <div class="text-3xl font-bold">$4,500.00</div>
+                    <div class="flex items-center gap-2 text-green-500">
+                        <span>↑ 23.1%</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                    <div>13k Units</div>
+                    <div>15 categories</div>
+                </div>
+            </div>
+            <div class="p-6 bg-white rounded-xl">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold">Products Inventory</h3>
+                </div>
+                <div class="mb-4">
+                    <div class="text-3xl font-bold">$11,700.00</div>
+                    <div class="flex items-center gap-2 text-green-500">
+                        <span>↑ 23.1%</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                    <div>27k Units</div>
+                    <div>15 categories</div>
+                </div>
+            </div>
+            <!-- Repeat cards for Income and Expense -->
+        </div>
+
+        <div class="w-full flex flex-row justify-between">
+            <div class="col-span-2 p-6 bg-white rounded-xl w-[66%]">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-lg font-semibold">Total products overview</h3>
+                    <div class="flex items-center gap-4">
+                        <h1 class="font-medium text-xl text-gray-500">15</h1>
+                    </div>
+
+                </div>
+                <div class="h-80 rounded flex flex-col overflow-y-scroll">
+                    <app-product-card></app-product-card>
+                    <app-product-card></app-product-card>
+                    <app-product-card></app-product-card>
+                    <app-product-card></app-product-card>
+                    <app-product-card></app-product-card>
+                </div>
+                
+            </div>
+            <div class="p-6 bg-white rounded-xl w-[32%]">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-lg font-semibold">Statistics</h3>
+                    <select class="px-2 py-1 border rounded">
+                        <option>Expense</option>
+                    </select>
+                </div>
+                <div class="relative h-64">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">$6,222.00</div>
+                            <div class="text-sm text-gray-500">This month expense</div>
+                        </div>
+                    </div>
+                    <svg class="w-full h-full" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#E5E7EB" stroke-width="10" />
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#818CF8" stroke-width="10"
+                            stroke-dasharray="220" stroke-dashoffset="66" transform="rotate(-90 50 50)" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

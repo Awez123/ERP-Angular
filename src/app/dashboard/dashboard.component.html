@@ -1,0 +1,85 @@
+<div class="flex min-h-screen bg-gray-50">
+   
+    <main class="flex-1">
+  
+      <div class="flex items-center justify-between mb-8">
+        <button class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border">
+          <span class="w-4 h-4 bg-gray-400 rounded-full"></span>
+          <span>This month</span>
+        </button>
+        <div class="flex items-center gap-4">
+          <button class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border">
+            <span class="w-4 h-4 bg-gray-400 rounded-full"></span>
+            <span>Manage widgets</span>
+          </button>
+          <button class="flex items-center gap-2 px-4 py-2 bg-indigo-500 text-white rounded-full">
+            <span class="w-4 h-4 bg-indigo-600 rounded-full"></span>
+            <span>Add new widget</span>
+          </button>
+        </div>
+      </div>
+  
+      <div class="grid grid-cols-3 gap-6 mb-8">
+        <!-- Card 1 -->
+        <div class="p-6 bg-white rounded-xl">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-lg font-semibold">Total balance</h3>
+            <select class="px-2 py-1 border rounded">
+              <option>USD</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <div class="text-3xl font-bold">$15,700.00</div>
+            <div class="flex items-center gap-2 text-green-500">
+              <span>↑ 12.1%</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-sm text-gray-500">
+            <div>50 transactions</div>
+            <div>15 categories</div>
+          </div>
+        </div>
+        <!-- Repeat cards for Income and Expense -->
+      </div>
+  
+      <div class="grid grid-cols-3 gap-6">
+        <div class="col-span-2 p-6 bg-white rounded-xl">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-lg font-semibold">Total balance overview</h3>
+            <div class="flex items-center gap-4">
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 bg-indigo-500 rounded-full"></div>
+                <span class="text-sm">This month</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                <span class="text-sm">Last month</span>
+              </div>
+            </div>
+          </div>
+          <div class="h-64 bg-gray-50 rounded"></div>
+        </div>
+        <div class="p-6 bg-white rounded-xl">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-lg font-semibold">Statistics</h3>
+            <select class="px-2 py-1 border rounded">
+              <option>Expense</option>
+            </select>
+          </div>
+          <div class="relative h-64">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-3xl font-bold">$6,222.00</div>
+                <div class="text-sm text-gray-500">This month expense</div>
+              </div>
+            </div>
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="#E5E7EB" stroke-width="10" />
+              <circle cx="50" cy="50" r="45" fill="none" stroke="#818CF8" stroke-width="10" stroke-dasharray="220" stroke-dashoffset="66" transform="rotate(-90 50 50)" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  

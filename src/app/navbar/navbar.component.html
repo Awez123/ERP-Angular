@@ -1,0 +1,75 @@
+<div class="min-h-screen w-full relative antialiased bg-gray-50 text-gray-800 ">
+  <!-- Sidebar -->
+  <aside class="w-[15%] p-6 bg-white border-r h-full fixed rounded-r-2xl">
+    <div class="flex items-center gap-2 mb-8">
+      <div class="w-8 h-8 bg-blue-600 rounded-full"></div>
+      <span class="text-xl font-semibold">JamERP</span>
+    </div>
+
+    <nav class="space-y-2">
+      <a routerLink="dashboard"
+        [ngClass]="{ 'bg-blue-900 bg-opacity-30 text-white': isActive('dashboard'), 'text-gray-600': !isActive('dashboard') }"
+        class="flex items-center gap-3 p-3 rounded-lg">
+        <span class="w-2 h-2 rounded-full" [ngClass]="{'bg-blue-600':isActive('dashboard'), 'bg-gray-600' : !isActive('dashboard')}"></span>
+        <span>Dashboard</span>
+      </a>
+      <a routerLink="users"
+        [ngClass]="{ 'bg-blue-900 bg-opacity-30 text-white': isActive('users'), 'text-gray-600': !isActive('users') }"
+        class="flex items-center gap-3 p-3 rounded-lg">
+        <span class="w-2 h-2 rounded-full" [ngClass]="{'bg-blue-600':isActive('users'), 'bg-gray-600' : !isActive('users')}"></span>
+        <span>Users</span>
+      </a>
+      <a routerLink="products"
+        [ngClass]="{ 'bg-blue-900 bg-opacity-30 text-white': isActive('products'), 'text-gray-600': !isActive('products') }"
+        class="flex items-center gap-3 p-3 rounded-lg">
+        <span class="w-2 h-2 rounded-full" [ngClass]="{'bg-blue-600':isActive('products'), 'bg-gray-600' : !isActive('products')}"></span>
+        <span>Products</span>
+      </a>
+      <a routerLink="warehouse"
+        [ngClass]="{ 'bg-blue-900 bg-opacity-30 text-white': isActive('warehouse'), 'text-gray-600': !isActive('warehouse') }"
+        class="flex items-center gap-3 p-3 rounded-lg">
+        <span class="w-2 h-2 rounded-full" [ngClass]="{'bg-blue-600':isActive('warehouse'), 'bg-gray-600' : !isActive('warehouse')}"></span>
+        <span>Warehouse</span>
+      </a>
+      <a routerLink="sales"
+        [ngClass]="{ 'bg-blue-900 bg-opacity-30 text-white': isActive('sales'), 'text-gray-600': !isActive('sales') }"
+        class="flex items-center gap-3 p-3 rounded-lg">
+        <span class="w-2 h-2 rounded-full" [ngClass]="{'bg-blue-600':isActive('sales'), 'bg-gray-600' : !isActive('sales')}"></span>
+        <span>Sales</span>
+      </a>
+    </nav>
+
+    <div class="flex absolute bottom-8 w-[70%] flex-col">
+      <a href="#" class="flex items-center gap-3 p-3 text-gray-600 rounded-lg ">
+        <span class="w-2 h-2 bg-red-400 rounded-full"></span>
+        <span>Log out</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="absolute right-0 p-6 w-[85%]">
+    <header class="flex items-center justify-between mb-8">
+      <div>
+        <h1 class="text-2xl font-semibold">Analytics</h1>
+        <p class="text-gray-500">Detailed overview of your financial situation</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="p-2 text-gray-600 rounded-full hover:bg-gray-100">
+          <span class="w-2 h-2 bg-gray-400 rounded-full"></span>
+        </button>
+        <button class="p-2 text-gray-600 rounded-full hover:bg-gray-100">
+          <span class="w-2 h-2 bg-gray-400 rounded-full"></span>
+        </button>
+        <div class="flex items-center gap-3">
+          <img src="../../assets/images/myprofilefiver.jpg" class="w-10 h-10 rounded-full" />
+          <div>
+            <p class="font-medium">Awez Ahmed Khan</p>
+            <p class="text-sm text-gray-500">awezkhan6889@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <router-outlet></router-outlet>
+  </div>
+</div>
